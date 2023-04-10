@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+button {
+    background-color: transparent;
+    border: 0;
+}
+
+.bg .top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 174, 255);
+    height: 50vh;
+    width: 100vw;
+    z-index: -1;
+}
+
+.bg .btm {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: rgb(165, 204, 194);
+    height: 50vh;
+    width: 100vw;
+    z-index: -1;
+}
+
+nav {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px rgb(0, 0.7, 0, 0.4);
+    min-width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    width: 70%;
+    transition: width ease 0.5s;
+}
+
+nav .fa-times,
+nav .fa-bars {
+    /* position: absolute; */
+    /* top: 50%;
+    transform: translateY(-50%);
+    right: -20px;
+    margin-right: 20px;
+    /* height: 100%; */
+    font-size: 26px;
+    color: rgb(0, 174, 255);
+    margin: 15px;
+    cursor: pointer;
+}
+
+nav ul {
+    opacity: 1;
+    margin: 0px;
+    padding: 0;
+    list-style: none;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s linear;
+}
+
+nav ul li {
+    /* display: inline-block; */
+    padding: 10px;
+    margin: 20px;
+    cursor: pointer;
+    transition: opacity 1s linear;
+}
+
+nav .fa-times.hidden {
+    display: none;
+}
+
+nav .fa-bars.hidden {
+    display: none;
+}
+
+nav.hidden {
+    width: 0%;
+}
+
+nav ul.hidden {
+    opacity: 0;
+}
+
+nav ul.hidden li {
+    display: none;
+}
